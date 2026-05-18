@@ -13,7 +13,7 @@
         HorizontalOptions="Center">
 
         <Label 
-            Text="Desenvolvido por Lydia."
+            Text="Desenvolvido por Lydia. 2026."
             TextColor="WhiteSmoke"
             FontFamily="SilkscreenRegular"
             HorizontalTextAlignment="Center"
@@ -22,10 +22,13 @@
         <Button
             Text="Voltar"
             Clicked="Voltar_Clicked"
-            BackgroundColor="CadetBlue"
+            BackgroundColor="#0B0F1A"
+            FontFamily="SilkscreenRegular"
+            FontAttributes="Bold"
             FontSize="14"
-            WidthRequest="120"
-            HeightRequest="40"/>
+            CornerRadius="25"
+            HeightRequest="55"
+            WidthRequest="200"/>
 
     </VerticalStackLayout>
 

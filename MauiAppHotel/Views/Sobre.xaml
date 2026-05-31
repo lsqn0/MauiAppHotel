@@ -21,6 +21,7 @@
 
         <Button
             Text="Voltar"
+            TextColor="AntiqueWhite"
             Clicked="Voltar_Clicked"
             BackgroundColor="#0B0F1A"
             FontFamily="SilkscreenRegular"

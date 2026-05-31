@@ -14,7 +14,7 @@
                FontSize="32"
                HorizontalOptions="Center"
                Margin="0,0,0,20"
-               TextColor="{StaticResource White}" />
+               TextColor="White" />
 
         <Frame Padding="10"
                BorderColor="#2DD4BF"
@@ -30,7 +30,7 @@
                              TextColor="AntiqueWhite"/>
 
                     <Label Grid.Row="0" Grid.Column="1"
-                           TextColor="{StaticResource White}"
+                           TextColor="White"
                            Text="{Binding Value}" 
                            BindingContext="{x:Reference stp_adultos}"/>
 
@@ -45,7 +45,7 @@
                              TextColor="AntiqueWhite"/>
 
                     <Label Grid.Row="1" Grid.Column="1"
-                           TextColor="{StaticResource White}"
+                           TextColor="White"
                            Text="{Binding Value}" 
                            BindingContext="{x:Reference stp_criancas}"/>
 
@@ -63,7 +63,8 @@
 
                 <Picker x:Name="pck_quarto"
                         Title="Selecione sua Acomodação"
-                        TitleColor="DarkGray"/>
+                        TitleColor="DarkGray"
+                        ItemDisplayBinding="{Binding Descricao}"/>
 
                 <Frame Padding="20"
                        Margin="10"
@@ -79,6 +80,7 @@
                             <Label Text="Check-in:"
                                    TextColor="AntiqueWhite"/>
                             <DatePicker x:Name="dtpck_checkin"
+                                        DateSelected="dtpck_checkin_DateSelected"
                                         Format="dd/MM/yyyy"
                                         TextColor="#7DF9FF"/>
                         </HorizontalStackLayout>
@@ -93,7 +95,8 @@
                     </VerticalStackLayout> 
                 </Frame>
 
-                <Button Text="Avançar" 
+                <Button Text="Avançar" Clicked="Button_Clicked"
+                        TextColor="AntiqueWhite"
                         Margin="0,20,0,10"
                         BackgroundColor="#0B0F1A"
                         FontFamily="SilkscreenRegular"
@@ -106,6 +109,7 @@
 
                 <Button
                     Text="Sobre"
+                    TextColor="AntiqueWhite"
                     Clicked="Sobre_Clicked"
                     BackgroundColor="#0B0F1A"
                     FontFamily="SilkscreenRegular"
